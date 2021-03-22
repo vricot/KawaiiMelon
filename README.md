@@ -1,0 +1,1 @@
+Welcome to Kawaii Melon, my twist on Amazon for black-owned alt-fashion businesses! This is an updated version of my Product Landing Page project, to include backend and multi-page functionality. 
