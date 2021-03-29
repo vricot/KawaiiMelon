@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-expand navbar-light navbar-custom">
             <div class="container-fluid">
-              <button class="sidebar-btn">
+              <button class="sidebar-btn" onclick="openMenu()">
                 &#9776;
               </button>
               <a class="navbar-brand" href="#">KawaiiMelon</a>
@@ -32,9 +32,18 @@
             </div>
           </nav>
         </div>
-            <aside>
-                Shopping Categories
-            </aside>
+          <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-btn" onclick="closeMenu()">+</button>
+            <ul>
+              <li>
+                <a href="index.html">Pants</a>
+              </li>
+              <li>
+                <a href="index.html">Shirts</a>
+              </li>
+            </ul>
+          </aside>
             <main>
               <div class="content">
                 <ul class="products">
@@ -154,5 +163,13 @@
             <div class="footer-div">
             <footer class="footer fixed-bottom">All rights reserved.</footer></div>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+            <script>
+              function openMenu() {
+                document.querySelector(".sidebar").classList.add("open");
+              }
+              function closeMenu() {
+                document.querySelector(".sidebar").classList.remove("open");
+              }
+            </script>
     </body>
 </html>

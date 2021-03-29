@@ -87,4 +87,33 @@ a:hover {
     background: none;
     border: none;
     color: white;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: rgb(255, 255, 179);
+    height: 100%;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-close-btn {
+    transform: rotate(45deg);
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+    font-size: 3rem;
+    padding-top: 0;
+    cursor: pointer;
+    position: absolute;
+    right: .5rem;
+    top: 0rem;
+    background: none;
+    border: none;
+    color: green;
 }
