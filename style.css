@@ -78,3 +78,13 @@ a:hover {
 .product-rating {
     margin-bottom: 1rem;
 }
+
+/* Sidebar */
+
+.sidebar-btn {
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: white;
+}
